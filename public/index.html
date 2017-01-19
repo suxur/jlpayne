@@ -8,15 +8,20 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
+
+<!--Header-->
 <section class="hero is-primary">
     <div class="hero-body">
         <div class="container">
             <div class="columns">
-                <div class="column is-2">
+
+                <!--Photo-->
+                <div class="column is-hidden-mobile is-2-desktop is-3-tablet">
                     <img class="image is-profile" src="img/me.jpg" alt="Joshua Payne">
                 </div>
 
-                <div class="column is-4">
+                <!--Info-->
+                <div class="column is-4-desktop is-5-tablet">
                     <h1 class="title is-1 has-text-centered">Joshua Payne</h1>
                     <h2 class="subtitle has-text-centered">– Web Developer –</h2>
                     <ul class="social has-text-centered">
@@ -41,10 +46,14 @@
         </div>
     </div>
 </section>
+
+<!--Content-->
 <section class="section">
     <div class="container">
         <div class="columns">
             <div class="column">
+
+                <!--About-->
                 <div class="box">
                     <p class="title">About</p>
                     <div class="content">
@@ -56,6 +65,8 @@
                         </blockquote>
                     </div>
                 </div>
+
+                <!--Work Experience-->
                 <div class="box">
                     <p class="title">Work Experience</p>
                     <p><strong>Lead Developer</strong></p>
@@ -77,29 +88,31 @@
                     <hr>
                     <p><strong>Developer &amp; Lead Developer</strong></p>
                     <div class="content">
-                    <p>The Environmental Compliance Group &#124; May 2013 &#8211; Jan. 2016</p>
-                    <p>
-                        Organized development tasks and projects.
-                        Supported employees with in-house application issues.
-                        Developed native PHP modules to for the back-end web application.
-                        Integrated Zoho, CallFire and Google Maps APIs into codebase.
-                    </p>
+                        <p>The Environmental Compliance Group &#124; May 2013 &#8211; Jan. 2016</p>
+                        <p>
+                            Organized development tasks and projects.
+                            Supported employees with in-house application issues.
+                            Developed native PHP modules to for the back-end web application.
+                            Integrated Zoho, CallFire and Google Maps APIs into codebase.
+                        </p>
                     </div>
                     <hr>
                     <p><strong>Developer</strong></p>
                     <div class="content">
-                    <p><a href="https://vrazer.com/">VRAZER</a> &#124; Mar. 2014 &#8211; Aug. 2014</p>
-                    <p>
-                        Developed custom PHP applications with Zend and Laravel frameworks.
-                        Created custom WordPress plugins to address client’s unique specifications.
-                        Transferred designs into WordPress Themes.
-                        Managed multiple projects and assist with client requests.
-                    </p>
+                        <p><a href="https://vrazer.com/">VRAZER</a> &#124; Mar. 2014 &#8211; Aug. 2014</p>
+                        <p>
+                            Developed custom PHP applications with Zend and Laravel frameworks.
+                            Created custom WordPress plugins to address client’s unique specifications.
+                            Transferred designs into WordPress Themes.
+                            Managed multiple projects and assist with client requests.
+                        </p>
                     </div>
                 </div>
+
             </div>
             <div class="column is-4">
-                <!-- Education -->
+
+                <!--Education-->
                 <div class="box">
                     <p class="title">Education</p>
                     <p><strong>Associate of Arts, General Studies</strong></p>
@@ -109,63 +122,117 @@
                     <p>Full Sail University &#124; 2007</p>
                 </div>
 
+                <!--Skills-->
                 <div class="box">
                     <p class="title">Skills</p>
                     <div class="content">
-                        <!--<p>PHP Frameworks</p>-->
-                        <!--<p>-->
-                        <span class="tag is-primary">Laravel</span>
-                        <span class="tag is-primary">CodeIgniter</span>
-                        <span class="tag is-primary">Zend</span>
-                        <!--</p>-->
-                        <!--<p>JavaScript Frameworks</p>-->
-                        <!--<p>-->
-                        <span class="tag is-primary">Vue</span>
-                        <span class="tag is-primary">React</span>
-                        <span class="tag is-primary">Angular</span>
-                        <!--</p>-->
-                        <!--<p>Servers</p>-->
-                        <!--<p>-->
-                        <span class="tag is-primary">Apache</span>
-                        <span class="tag is-primary">Nginx</span>
-                        <span class="tag is-primary">MySQL</span>
-                        <!--</p>-->
-                        <!--<p>Environments</p>-->
-                        <!--<p>-->
-                        <span class="tag is-primary">Mac OS</span>
-                        <span class="tag is-primary">Vagrant</span>
-                        <span class="tag is-primary">Ubuntu</span>
-                        <!--</p>-->
-                        <!--<p>Languages</p>-->
-                        <!--<p>-->
-                        <span class="tag is-primary">PHP</span>
-                        <span class="tag is-primary">HTML & CSS</span>
-                        <span class="tag is-primary">JavaScript</span>
-                        <!--</p>-->
-                        <!--<p>Editors</p>-->
-                        <!--<p>-->
-                        <span class="tag is-primary">PhpStorm</span>
-                        <span class="tag is-primary">Sublime Text</span>
-                        <span class="tag is-primary">Vim</span>
-                        <!--</p>-->
-                        <!--<p>Tools</p>-->
-                        <!--<p>-->
-                        <span class="tag is-primary">git</span>
-                        <span class="tag is-primary">sass</span>
-                        <span class="tag is-primary">gulp</span>
-                        <span class="tag is-primary">grunt</span>
-                        <span class="tag is-primary">npm</span>
-                        <span class="tag is-primary">bower</span>
-                        <!--</p>-->
-
+                        <table class="table is-narrow">
+                            <thead>
+                            <tr>
+                                <th>PHP Frameworks</th>
+                                <th>Servers</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Laravel</td>
+                                <td>Apache</td>
+                            </tr>
+                            <tr>
+                                <td>CodeIgniter</td>
+                                <td>Nginx</td>
+                            </tr>
+                            <tr>
+                                <td>Zend</td>
+                                <td>MySQL</td>
+                            </tr>
+                            </tbody>
+                            <thead>
+                            <tr>
+                                <th>JavaScript Frameworks</th>
+                                <th>Environments</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Vue</td>
+                                <td>Mac OS</td>
+                            </tr>
+                            <tr>
+                                <td>React</td>
+                                <td>Vagrant</td>
+                            </tr>
+                            <tr>
+                                <td>Angular</td>
+                                <td>Ubuntu</td>
+                            </tr>
+                            </tbody>
+                            <thead>
+                            <tr>
+                                <th>Languages</th>
+                                <th>Editors</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>PHP</td>
+                                <td>PhpStorm</td>
+                            </tr>
+                            <tr>
+                                <td>HTML & CSS</td>
+                                <td>Sublime Text</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>Vim</td>
+                            </tr>
+                            </tbody>
+                            <thead>
+                            <tr>
+                                <th>Tools</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>git</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>sass</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>gulp</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>gulp</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>grunt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>npm</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>bower</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+
             </div>
-
         </div>
-
     </div>
 </section>
+
+<!--Footer-->
 <footer class="footer">
     <div class="container">
         <div class="content has-text-centered">
@@ -180,5 +247,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>

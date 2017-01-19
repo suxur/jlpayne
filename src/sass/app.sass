@@ -6,25 +6,31 @@
 
 .hero
     .is-profile
+        border: 5px solid $white
         border-radius: 50%
-        border: 5px solid $white-bis
         margin-right: 30px
-
-    //.title
-    //    font-size: 3.4rem
 
 .social
     li
-        display: inline-flex
-        background: #b0b7bf
-        width: 36px
-        height: 36px
-        border-radius: 50%
-        color: #fff
-        background-clip: padding-box
         align-items: center
+        display: inline-flex
         justify-content: center
         margin: 0 5px
+
+        a
+            align-items: center
+            background: $purple
+            background-clip: padding-box
+            border-radius: 50%
+            color: $white
+            display: inline-flex
+            height: 36px
+            justify-content: center
+            width: 36px
+
+            &:hover
+                background: darken($purple, 5%)
+
 .box
     .title
         border-bottom: 1px solid $grey-lighter
@@ -32,9 +38,12 @@
 .footer
     background-color: $white
 
-
-.tag
-    margin-top: 4px
-
 hr
     margin: 1rem 0
+
+.content
+    table
+        thead
+            th
+                background-color: $primary
+                color: $white
