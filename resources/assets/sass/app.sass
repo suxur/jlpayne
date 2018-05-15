@@ -1,0 +1,58 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Anton|Josefin+Slab:400,700")
+
+// Variables
+@import "variables"
+@import "../../../node_modules/bulma/bulma"
+
+.title
+    font-family: $family-title
+
+.hero
+    .is-profile
+        border: 5px solid $white
+        border-radius: 50%
+        margin-right: 30px
+
+.social
+    li
+        align-items: center
+        display: inline-flex
+        justify-content: center
+        margin: 0 5px
+
+        a
+            align-items: center
+            background: $purple
+            background-clip: padding-box
+            border-radius: 50%
+            color: $white
+            display: inline-flex
+            height: 36px
+            justify-content: center
+            width: 36px
+
+            &:hover
+                background: darken($purple, 5%)
+
+.box
+    .title
+        border-bottom: 1px solid $grey-lighter
+
+.experience
+    &:last-of-type
+        hr
+            display: none
+
+.footer
+    background-color: $white
+
+hr
+    margin: 1rem 0
+
+.content
+    table
+        thead
+            th
+                background-color: $primary
+                color: $white
