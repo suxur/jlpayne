@@ -24,5 +24,5 @@
             <p>{{ $experience['description'] }}</p>
         @endif
     </div>
-    <hr>
 </div>
+<hr>

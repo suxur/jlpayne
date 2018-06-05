@@ -26,4 +26,28 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get the profile record associated with the user.
+     */
+    public function profile()
+    {
+        return $this->hasOne('App\Profile');
+    }
+
+    /**
+     * Get the links record associated with the user.
+     */
+    public function links()
+    {
+        return $this->hasMany('App\Link');
+    }
+
+    /**
+     * Get the skills record associated with the user.
+     */
+    public function skills()
+    {
+        return $this->hasMany('App\Skills')->whereNull('parent_id')->with('children');
+    }
 }

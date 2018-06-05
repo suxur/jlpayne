@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/print', 'HomeController@print')->name('print');
 
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::resource('experience', 'ExperienceController');

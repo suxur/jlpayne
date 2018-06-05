@@ -11,7 +11,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Fonts -->
-    <script src="https://use.fontawesome.com/1f5d73d6af.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -80,12 +80,21 @@
             <div class="columns">
                 @auth
                     <div class="column is-one-quarter">
-                    <aside class="menu box">
-                        <p class="menu-label">General</p>
-                        <ul class="menu-list">
-                            <li><a href="{{ route('dashboard') }}" class="{{ (request()->is('dashboard') ? 'is-active' : '') }}">Dashboard</a></li>
-                        </ul>
-                    </aside>
+                        <aside class="menu box">
+                            <p class="menu-label">General</p>
+                            <ul class="menu-list">
+                                <li>
+                                    <a href="{{ route('dashboard') }}" class="{{ (request()->is('dashboard') ? 'is-active' : '') }}">
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('experience.index') }}" class="{{ (request()->is('experience', 'experience/*') ? 'is-active' : '') }}">
+                                        Experience
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
                     </div>
                 @endauth
                 @yield('content')

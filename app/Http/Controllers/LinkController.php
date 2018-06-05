@@ -2,16 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Experience;
+use App\Link;
 use Illuminate\Http\Request;
 
-class ExperienceController extends Controller
+class LinkController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -19,9 +14,7 @@ class ExperienceController extends Controller
      */
     public function index()
     {
-        $experiences = Experience::all();
-
-        return view('auth.experience.index')->with(compact('experiences'));
+        //
     }
 
     /**
@@ -31,7 +24,7 @@ class ExperienceController extends Controller
      */
     public function create()
     {
-        return view('auth.experience.create');
+        //
     }
 
     /**
@@ -48,10 +41,10 @@ class ExperienceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Experience  $experience
+     * @param  \App\Link  $link
      * @return \Illuminate\Http\Response
      */
-    public function show(Experience $experience)
+    public function show(Link $link)
     {
         //
     }
@@ -59,10 +52,10 @@ class ExperienceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Experience  $experience
+     * @param  \App\Link  $link
      * @return \Illuminate\Http\Response
      */
-    public function edit(Experience $experience)
+    public function edit(Link $link)
     {
         //
     }
@@ -71,10 +64,10 @@ class ExperienceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Experience  $experience
+     * @param  \App\Link  $link
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Experience $experience)
+    public function update(Request $request, Link $link)
     {
         //
     }
@@ -82,10 +75,10 @@ class ExperienceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Experience  $experience
+     * @param  \App\Link  $link
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Experience $experience)
+    public function destroy(Link $link)
     {
         //
     }
