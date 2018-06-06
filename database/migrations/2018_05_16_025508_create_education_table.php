@@ -17,7 +17,7 @@ class CreateEducationTable extends Migration
             $table->increments('id');
             $table->string('degree');
             $table->string('school');
-            $table->date('from');
+            $table->date('from')->nullable();
             $table->date('to');
             $table->timestamps();
         });

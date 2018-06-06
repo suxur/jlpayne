@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120466191-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-120466191-1');
+    </script>
+
     <title>{{ $user->name }} | {{ $user->profile->title }}</title>
     <script src="https://use.fontawesome.com/1f5d73d6af.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ elixir('css/app.css') }}">

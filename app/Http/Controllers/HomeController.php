@@ -53,7 +53,7 @@ class HomeController extends Controller
         $skills  = $user->skills;
 
 
-        $experiences = Experience::all()->sortByDesc('to');
+        $experiences = Experience::all()->sortByDesc('to')->sortByDesc('current');
         $education   = Education::all()->sortByDesc('to');
 
         return compact('experiences', 'education', 'profile', 'user', 'links', 'skills');
