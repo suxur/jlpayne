@@ -1,6 +1,7 @@
 <div class="experience">
-    <p>
+    <p class="spread">
         <strong>{{ $experience['title'] }}</strong>
+         <span>{{ $experience['duration'] }}</span>
     </p>
     <div class="content">
         <p>
@@ -21,7 +22,7 @@
             @endif
         </p>
         @if($experience['description'])
-            <p>{{ $experience['description'] }}</p>
+            <p>{!! $experience['description'] !!}</p>
         @endif
     </div>
 </div>

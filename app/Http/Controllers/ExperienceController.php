@@ -53,7 +53,6 @@ class ExperienceController extends Controller
      */
     public function show(Experience $experience)
     {
-        //
     }
 
     /**

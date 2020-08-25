@@ -1,28 +1,12 @@
 // Fonts
-@font-face
-    font-family: 'Dosis'
-    font-style: normal
-    font-weight: normal
-    src: url('storage/fonts/Dosis-Regular.ttf')  format('truetype')
-
-@font-face
-    font-family: 'Dosis'
-    font-style: italic
-    font-weight: normal
-    src: url('storage/fonts/Dosis-Regular.ttf')  format('truetype')
-
-@font-face
-    font-family: 'Dosis'
-    font-style: normal
-    font-weight: bold
-    src: url('storage/fonts/Dosis-Bold.ttf')  format('truetype')
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Anton")
 
 // Variables
 @import "variables"
 @import "../../../node_modules/bulma/bulma"
 
 body
-    font-family: 'Dosis', serif
+    font-family: 'Montserrat', sans-serif
     font-size: 0.85rem
 
 em
@@ -37,6 +21,9 @@ table
 
 blockquote
     margin-top: 1em
+
+.title
+    font-family: $family-title
 
 .img-icon
     position: absolute
@@ -73,5 +60,3 @@ blockquote
 .is-size-6
     margin-top: 1rem
     margin-bottom: 0 !important
-
-

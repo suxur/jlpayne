@@ -1,5 +1,5 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Anton|Josefin+Slab:400,700")
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Anton")
 
 // Variables
 @import "variables"
@@ -8,11 +8,20 @@
 .title
     font-family: $family-title
 
+.spread
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+
 .hero
     .is-profile
         border: 5px solid $white
         border-radius: 50%
         margin-right: 30px
+        filter: grayscale(100%)
+
+        &:hover
+            filter: none
 
 .social
     li
@@ -23,7 +32,7 @@
 
         a
             align-items: center
-            background: $purple
+            background: $primary
             background-clip: padding-box
             border-radius: 50%
             color: $white
@@ -33,12 +42,13 @@
             width: 36px
 
             &:hover
-                background: darken($purple, 5%)
+                background: darken($primary, 5%)
 
 .resume
     margin: 10px 25px 0 25px
 
 .box
+    box-shadow: none
     .title
         border-bottom: 1px solid $grey-lighter
 

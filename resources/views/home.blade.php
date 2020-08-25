@@ -21,14 +21,14 @@
 <body>
 
 <!--Header-->
-<section class="hero is-primary">
+<section class="hero is-dark">
     <div class="hero-body">
         <div class="container">
             <div class="columns">
 
                 <!--Photo-->
                 <div class="column is-hidden-mobile is-2-desktop is-3-tablet">
-                    <img class="image is-profile" src="img/me.jpg" alt="{{ $user->name }}">
+                    <img class="image is-profile" src="img/me-alt.jpg" alt="{{ $user->name }}">
                 </div>
 
                 <!--Info-->
@@ -44,11 +44,14 @@
                             </li>
                         @endforeach
                     </ul>
-                    <a class="resume button is-block is-primary is-rounded has-text-centered" href="{{ route('print') }}">
+                    <div class="has-text-centered">
+                        <a class="resume button is-primary is-rounded has-text-centered" href="{{ route('print') }}">
                         <span class="icon">
                             <i class="fa fa-print"></i>
                         </span>
-                    </a>
+                            &nbsp; Resume
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,7 +74,7 @@
 
                 <!--Work Experience-->
                 <div class="box">
-                    <p class="title">Work Experience</p>
+                    <p class="title spread">Work Experience <span class="is-size-5 has-text-weight-light">{{ $experience_total }}</span></p>
                     @each('partials.experience', $experiences, 'experience')
                 </div>
 

@@ -12,18 +12,17 @@
 
 <!--Header-->
 <div class="container content">
-    <section class="hero is-primary">&nbsp;</section>
-    <img class="img-icon" src="img/resume-icon.svg">
-    <p class="title is-size-1 has-text-primary has-text-centered">{{ $user->name }}</p>
-    <p class="title is-size-5 has-text-centered">{{ $profile->location }} <span class="has-text-grey-lighter">|</span> {{ $profile->number }} <span class="has-text-grey-lighter">|</span> <a class="has-text-primary" href="mailto:{{ $user->email }}">{{ $user->email }}</a></p>
+    <section class="hero is-dark">&nbsp;</section>
+    <p class="title is-size-1 has-text-centered">{{ $user->name }}</p>
+    <p class="title is-size-5 has-text-centered">{{ $profile->location }} <span class="has-text-grey-lighter">|</span> {{ $profile->number }} <span class="has-text-grey-lighter">|</span> <a href="mailto:{{ $user->email }}">{{ $user->email }}</a></p>
 
     <!--About-->
-    <p class="title is-size-6 has-text-primary">Summary</p>
+    <p class="title is-size-6">Summary</p>
     <hr />
-    {!! $profile->bio !!}
+{!! $profile->bio !!}
 
 <!--Experience-->
-    <p class="title is-size-6 has-text-primary">Experience</p>
+    <p class="title is-size-6">Experience</p>
     <hr />
     @foreach($experiences as $experience)
         <table>
@@ -44,7 +43,7 @@
         </table>
         <p>
         @if($experience['url'])
-                <a class="has-text-primary" href="{{ $experience['url'] }}" target="_blank">
+                <a href="{{ $experience['url'] }}" target="_blank">
                 {{ $experience['company'] }}
             </a>
             @else
@@ -54,13 +53,13 @@
             {{ $experience->location }}
         </p>
         @if($experience['description'])
-            <p>{{ $experience['description'] }}</p>
+            <p>{!! $experience['description'] !!}</p>
         @endif
     @endforeach
 
 
 <!--Education-->
-    <p class="title is-size-6 has-text-primary">Education</p>
+    <p class="title is-size-6">Education</p>
     <hr />
     @foreach($education as $e)
         <table>
@@ -77,7 +76,7 @@
 @endforeach
 
 <!--Skills-->
-    <p class="title is-size-6 has-text-primary">Skills</p>
+    <p class="title is-size-6">Skills</p>
     <hr />
     <table>
         <thead>
