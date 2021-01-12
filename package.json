@@ -27,6 +27,11 @@
     "dependencies": {
         "bulma": "0.7.1",
         "glob-all": "3.1.0",
-        "purgecss-webpack-plugin": "0.22.1"
+        "js-yaml": "^3.13.1",
+        "object-path": "^0.11.5",
+        "purgecss-webpack-plugin": "0.22.1",
+        "serialize-javascript": "^3.1.0",
+        "webpack-dev-server": "^3.1.11",
+        "yargs-parser": "^13.1.2"
     }
 }
