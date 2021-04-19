@@ -28,7 +28,7 @@
 
                 <!--Photo-->
                 <div class="column is-hidden-mobile is-2-desktop is-3-tablet">
-                    <img class="image is-profile" src="img/me-alt.jpg" alt="{{ $user->name }}">
+                    <img class="image is-profile" src="img/me-whm-thumbnail.jpg" alt="{{ $user->name }}">
                 </div>
 
                 <!--Info-->
