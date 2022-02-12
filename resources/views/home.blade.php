@@ -16,7 +16,7 @@
 
     <title>{{ $user->name }} | {{ $user->profile->title }}</title>
     <script src="https://use.fontawesome.com/1f5d73d6af.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ elixir('css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
 </head>
 <body>
 
