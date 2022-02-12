@@ -37,15 +37,6 @@ class LinksTableSeeder extends Seeder
             [
                 'id' => 3,
                 'user_id' => 1,
-                'name' => 'Twitter',
-                'url' => 'https://twitter.com/JoshTheCodeDad',
-                'icon' => 'fa-twitter',
-                'created_at' => '2018-05-15 22:42:07',
-                'updated_at' => '2018-05-15 22:42:07',
-            ],
-            [
-                'id' => 4,
-                'user_id' => 1,
                 'name' => 'StackOverflow',
                 'url' => 'https://stackoverflow.com/users/1748852/suxur?tab=profile',
                 'icon' => 'fa-stack-overflow',

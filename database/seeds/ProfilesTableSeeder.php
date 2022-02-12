@@ -17,14 +17,12 @@ class ProfilesTableSeeder extends Seeder
 
         DB::table('profiles')->insert([
             [
-                'id' => 1,
-                'user_id' => 1,
-                'title' => 'Web Developer',
-                'bio' => 'Highly driven and passionate self-taught developer of six years who specializes in building web applications in PHP and JavaScript frameworks while always striving to learn and broaden an already extensive skill set. Excellent problem solver, stickler for writing clean code and always looking for efficient ways to refactor and implement new technologies.
-
->*As a father, husband, code junkie, gamer and minimalist, I believe your work shouldn\'t define your life but your life should define your work.*',
-                'location' => 'Yukon, OK 73099',
-                'number' => '405.494.0029',
+                'id'         => 1,
+                'user_id'    => 1,
+                'title'      => 'Senior Front-End Web Developer',
+                'bio'        => 'I’m a father, husband, developer, dungeon master, miniature painter, gamer, and minimalist. I’m a highly driven and passionate self-taught developer of eight years. I specialize in building web applications in PHP and JavaScript frameworks. I love to learn and broaden my already extensive skill set. I am an excellent problem solver, a stickler for writing clean code, and always looking for efficient ways to refactor and implement new technologies.',
+                'location'   => 'Yukon, OK 73099',
+                'number'     => '405.494.0029',
                 'created_at' => '2018-05-15 22:20:36',
                 'updated_at' => '2018-05-15 22:20:36',
             ]
